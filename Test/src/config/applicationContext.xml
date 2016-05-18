@@ -35,7 +35,8 @@
 	<!-- <tx:annotation-driven transaction-manager="txManager" /> -->
 
 	<aop:config>
-		<aop:pointcut expression="execution(* exam.service..*(..))"
+		<!-- 定义在service包或者子包里的任意类的任意方法进行切入 -->
+		<aop:pointcut expression="execution(* exam.service..*.*(..))"
 			id="serviceMethod" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethod" />
 	</aop:config>

@@ -13,7 +13,7 @@
 			window.location.href = "login.do";
 		</script>
 	</c:if>
-	<table align="center" style=" border-style: dashed;border-width:thick;margin-top:15%;">
+	<table align="center" style=" border-style: double;border-width:thick;margin-top:15%;">
 		<tr><td colspan="2" style="text-align: center;"><h2>用户信息</h2></td></tr>
 		<tr> 	
 			<td>姓名:</td>
